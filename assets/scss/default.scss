@@ -1,0 +1,139 @@
+$black: #202020;
+$gray: #4F4F4F;
+$background: #E5E5E5;
+$blue: #5528FF;
+$light-gray: #C2C2C2;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Baloo Thambi 2';
+    font-size: 14px;
+    color: $black;
+    line-height: 1.2em;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: 0;
+    outline: none;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    padding: 100px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1em;
+}
+
+.container {
+    max-width: 1180px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
+}
+ 
+.c-button {
+    font-size: 24px;
+    color: #FFFFFF;
+    background-color: $blue;
+    border-radius: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+}
+
+.title {
+    position: relative;
+    font-size: 14px;
+    span {
+        z-index: 2;
+        position: relative;
+        color: $light-gray;
+        background-color: white;
+        padding: 0 20px;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        width: 99vw;
+        height: 1px;
+        left: 50%;
+        top: 50%;
+        z-index: 1;
+        display: block;
+        transform: translateY(-50%) translateX(-50%);
+        background-color: $light-gray;
+    }
+}
+
+.link {
+    font-size: 14px;
+    color: $black;
+    font-weight: 500;
+    &.active {
+        background-color: $blue;
+        color: #fff;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 992px;
+        width: auto;
+    }
+
+    .content {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}
+@media screen and (max-width: 991px) { 
+    .content {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+ 
+@media screen and (max-width: 767px) {  
+    .content {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .c-button {
+        font-size: 18px;
+        padding: 10px 25px;
+    }
+
+    .title {
+     
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .c-button {
+        font-size: 16px;
+    }
+}
