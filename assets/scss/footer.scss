@@ -26,7 +26,9 @@
 
 @media screen and (max-width: 767px) {  
     .footer {
-
+        &__logo {
+            cursor: pointer;
+        }
     }
     .logo {
         max-width: 40px;

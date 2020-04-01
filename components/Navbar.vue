@@ -34,7 +34,7 @@
                 }, 
                 {
                     link: '/#team',
-                    title: 'Our yeam'
+                    title: 'Our team'
                 },
                 {
                     link: '/#contact', 

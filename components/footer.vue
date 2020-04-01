@@ -1,9 +1,9 @@
 <template>
     <footer class="footer">
         <div class="container footer__container">
-            <figure class="footer__logo logo">
+            <a href="/" class="footer__logo logo link">
                 <img src="../assets/images/logo.svg" alt="" class="logo__img">
-            </figure>
+            </a>
             <nav class="footer__social social-icons">
                 <ul class="social-icons__list">
                 <li class="social-icons__item">
